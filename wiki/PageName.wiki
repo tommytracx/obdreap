@@ -14,6 +14,5 @@ I am very preferential to c# for a couple of reasons.
 = Details =
 
 Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * Begin in C#
+  * Make everything using basic language fundamentals.
