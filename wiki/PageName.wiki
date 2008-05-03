@@ -1,0 +1,19 @@
+#summary Determining the language this application will be developed in.
+#labels c,platforms
+
+= Introduction =
+I am very preferential to c# for a couple of reasons.
+ # I know it because I am employed as a C# developer.
+ # It has a really intuitive TDD backend. Everything is point and click
+ # Code generation is point and click so code can be created rapidly
+ # GUI development is simple and easily changed 
+   # later we can develop a GTK equivalent and plug our C# code into that
+ # C# is platform independent through the Mono project
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
