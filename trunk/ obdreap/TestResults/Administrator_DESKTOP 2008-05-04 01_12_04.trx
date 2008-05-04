@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="04a1d69f-91f2-4c45-849e-676556ea132a" name="Administrator@DESKTOP 2008-05-04 01:12:04" runUser="DESKTOP\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="83aba3ea-57f6-4249-8e07-3130942d9d3b">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\TestResults\Administrator_DESKTOP 2008-05-04 01_12_04">
+      <DeploymentItem filename="C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReap\bin\Debug\OBDReap.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2008-05-04T01:12:04.4375000-05:00" queuing="2008-05-04T01:12:05.4843750-05:00" start="2008-05-04T01:12:05.7343750-05:00" finish="2008-05-04T01:13:10.8125000-05:00" />
+  <TestDefinitions>
+    <UnitTest name="ParseOutBitsTest" storage="c:\documents and settings\administrator\my documents\visual studio 2008\projects\obdreap\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="f0f6ad11-e747-eb61-4b5a-c796ace2cdb0">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <DeploymentItems>
+        <DeploymentItem filename="OBDReap.exe" />
+      </DeploymentItems>
+      <Execution id="0e65f6a8-1787-40e3-8493-ac565473c075" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="ParseOutBitsTest" />
+    </UnitTest>
+    <UnitTest name="Supported_PIDsTest" storage="c:\documents and settings\administrator\my documents\visual studio 2008\projects\obdreap\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="63bee9b4-2d17-54f4-a756-36c3c7cd634a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="04d5caab-6485-4f9e-a021-fe87f8f6384e" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBDReap_SensorsTest, OBDReapTestProject" name="Supported_PIDsTest" />
+    </UnitTest>
+    <UnitTest name="StringBools" storage="c:\documents and settings\administrator\my documents\visual studio 2008\projects\obdreap\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="4c113422-70c7-0324-61f5-7f51204b8e90">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="349c64e8-f211-48aa-9c34-fc1014b50ed6" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBDReap_SensorsTest, OBDReapTestProject" name="StringBools" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="63bee9b4-2d17-54f4-a756-36c3c7cd634a" executionId="04d5caab-6485-4f9e-a021-fe87f8f6384e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0f6ad11-e747-eb61-4b5a-c796ace2cdb0" executionId="0e65f6a8-1787-40e3-8493-ac565473c075" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c113422-70c7-0324-61f5-7f51204b8e90" executionId="349c64e8-f211-48aa-9c34-fc1014b50ed6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="04d5caab-6485-4f9e-a021-fe87f8f6384e" testId="63bee9b4-2d17-54f4-a756-36c3c7cd634a" testName="Supported_PIDsTest" computerName="DESKTOP" duration="00:00:00.1740664" startTime="2008-05-04T01:12:05.8125000-05:00" endTime="2008-05-04T01:12:06.1562500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;2730&gt;. Actual:&lt;(null)&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBDReap_SensorsTest.Supported_PIDsTest() in C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReapTestProject\OBDReap_SensorsTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0e65f6a8-1787-40e3-8493-ac565473c075" testId="f0f6ad11-e747-eb61-4b5a-c796ace2cdb0" testName="ParseOutBitsTest" computerName="DESKTOP" duration="00:01:04.5356268" startTime="2008-05-04T01:12:06.1562500-05:00" endTime="2008-05-04T01:13:10.7031250-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;System.Boolean[]&gt;. Actual:&lt;System.Boolean[]&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.ParseOutBitsTest() in C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReapTestProject\OBD_SensorsTest.cs:line 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="349c64e8-f211-48aa-9c34-fc1014b50ed6" testId="4c113422-70c7-0324-61f5-7f51204b8e90" testName="StringBools" computerName="DESKTOP" duration="00:00:00.1145691" startTime="2008-05-04T01:13:10.7031250-05:00" endTime="2008-05-04T01:13:10.7187500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method OBDReapTestProject.OBDReap_SensorsTest.StringBools threw exception:  System.IndexOutOfRangeException: Index was outside the bounds of the array..</Message>
+          <StackTrace>    at OBDReapTestProject.OBDReap_SensorsTest.StringBools() in C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReapTestProject\OBDReap_SensorsTest.cs:line 88
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
