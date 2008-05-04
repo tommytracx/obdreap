@@ -75,7 +75,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0101");
-                ret.result = int.Parse(ret.RawValue,System.Globalization.NumberStyles.HexNumber).ToString();
+                ret.result = ret.RawValue.ToString();
                 ret.name = "Status Since DTC Cleared";
                 return ret;
             }
@@ -83,7 +83,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0102");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "DTC Causing Freeze Frame";
                 return ret;
             }
@@ -91,7 +91,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0103");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "      Fuel System Status";
                 return ret;
             }
@@ -99,7 +99,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0104");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "   Calculated Load Value";
                 return ret;
             }
@@ -107,7 +107,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0105");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "     Coolant Temperature";
                 return ret;
             }
@@ -115,7 +115,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0106");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "    Short Term Fuel Trim";
                 return ret;
             }
@@ -123,7 +123,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0107");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "     Long Term Fuel Trim";
                 return ret;
             }
@@ -131,7 +131,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0108");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "    Short Term Fuel Trim";
                 return ret;
             }
@@ -139,7 +139,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0109");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "     Long Term Fuel Trim";
                 return ret;
             }
@@ -147,7 +147,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("010A");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "      Fuel Rail Pressure";
                 return ret;
             }
@@ -155,7 +155,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("010B");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "Intake Manifold Pressure";
                 return ret;
             }
@@ -163,7 +163,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("010C");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "              Engine RPM";
                 return ret;
             }
@@ -171,7 +171,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("010D");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "           Vehicle Speed";
                 return ret;
             }
@@ -179,7 +179,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("010E");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "          Timing Advance";
                 return ret;
             }
@@ -187,7 +187,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("010F");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "         Intake Air Temp";
                 return ret;
             }
@@ -195,7 +195,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0110");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "     Air Flow Rate (MAF)";
                 return ret;
             }
@@ -203,7 +203,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0111");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "       Throttle Position";
                 return ret;
             }
@@ -211,7 +211,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0112");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "    Secondary Air Status";
                 return ret;
             }
@@ -219,7 +219,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0113");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "  Location of O2 sensors";
                 return ret;
             }
@@ -227,7 +227,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0114");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "        O2 Sensor: 1 - 1";
                 return ret;
             }
@@ -235,7 +235,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0115");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "        O2 Sensor: 1 - 2";
                 return ret;
             }
@@ -243,7 +243,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0116");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "        O2 Sensor: 1 - 3";
                 return ret;
             }
@@ -251,7 +251,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0117");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "        O2 Sensor: 1 - 4";
                 return ret;
             }
@@ -259,7 +259,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0118");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "        O2 Sensor: 2 - 1";
                 return ret;
             }
@@ -267,7 +267,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("0119");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "        O2 Sensor: 2 - 2";
                 return ret;
             }
@@ -275,7 +275,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("011A");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "        O2 Sensor: 2 - 3";
                 return ret;
             }
@@ -283,7 +283,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("011B");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "        O2 Sensor: 2 - 4";
                 return ret;
             }
@@ -291,7 +291,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("011C");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "         OBD Designation";
                 return ret;
             }
@@ -299,7 +299,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("011D");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "  Location of O2 sensors";
                 return ret;
             }
@@ -307,7 +307,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("011E");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "        Aux input status";
                 return ret;
             }
@@ -315,7 +315,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("011F");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = " Time Since Engine Start";
                 return ret;
             }
@@ -323,12 +323,10 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("014E");
-                ret.result = ret.RawValue;
+                ret.result = "";
                 ret.name = "  Engine Run with MIL on";
                 return ret;
             }
-
-
             /*
              * SENSORS = [
     Sensor("          Supported PIDs", "0100", hex_to_bitstring  ,""       ),    
@@ -367,9 +365,6 @@ namespace OBDReap
 
     ]
              * */
-
-
-
         }
 
         public void TranslateCode()
