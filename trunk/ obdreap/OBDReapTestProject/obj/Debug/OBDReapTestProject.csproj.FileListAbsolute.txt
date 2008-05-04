@@ -7,3 +7,12 @@ C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects
 C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReapTestProject\obj\Debug\OBDReapTestProject.pdb
 C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReapTestProject\bin\Debug\OBDReap_Accessor.dll
 C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\OBDReap\OBDReapTestProject\bin\Debug\OBDReap_Accessor.pdb
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.pdb
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReap.exe
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReap.pdb
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReap_Accessor.dll
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReap_Accessor.pdb
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\obj\Debug\OBDReapTestProject.dll
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\obj\Debug\OBDReapTestProject.pdb

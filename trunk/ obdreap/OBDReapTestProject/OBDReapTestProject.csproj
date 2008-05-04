@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OBDReap_SensorsTest.cs" />
+    <Compile Include="OBDTest.cs" />
     <Compile Include="OBD_SensorsTest.cs" />
+    <Compile Include="OBD_Sensors_ReturnSetTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
