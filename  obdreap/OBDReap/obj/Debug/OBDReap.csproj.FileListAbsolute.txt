@@ -12,3 +12,4 @@ C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReap\
 C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReap\bin\Debug\OBDReap.exe
 C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReap\bin\Debug\OBDReap.pdb
 C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReap\obj\Debug\OBDReap.pdb
+C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReap\obj\Debug\OBDReap.Form1.resources

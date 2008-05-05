@@ -10,9 +10,25 @@ namespace OBDReap
 {
     public partial class Form1 : Form
     {
+        public OBD.Sensors.ReturnSet strRes;
+        public OBD.Sensors obd = new OBD.Sensors();
         public Form1()
         {
             InitializeComponent();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //while (true)
+            //{
+                strRes = obd.Vehicle_Speed();
+                if (strRes.result != "")
+                {
+                    textBox1.Text = strRes.result;
+                }
+            //}
+
         }
     }
     
@@ -23,6 +39,18 @@ namespace OBDReap
         /// </summary>
         public class Sensors
         {
+            ~Sensors()
+            {
+                if (sp != null)
+                {
+                    sp.Close();
+                    sp = null;
+                }
+            }
+
+            String[] ports =
+                System.IO.Ports.SerialPort.GetPortNames();
+            System.IO.Ports.SerialPort sp=null;
             public class ReturnSet
             {
                 public String result;
@@ -30,11 +58,33 @@ namespace OBDReap
                 public String modifier;
                 public String name;
             }
-
+            private int MaintainConnection()
+            {
+                if (sp == null)
+                {                    
+                    sp = new System.IO.Ports.SerialPort("COM4", 9600, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+                    sp.Open();
+                    sp.WriteLine("atz");
+                    sp.WriteLine("ate0");
+                }
+                
+                return -1;
+            }
             private int GetCmd(String pid)
             {
-                //access Com port here
-                return HexToInt("AAA");
+                MaintainConnection();
+                try
+                {
+                    sp.WriteLine(pid);
+                    //sp.Close();
+                }
+                catch (Exception exp)
+                {
+                    System.Diagnostics.Debug.WriteLine(exp.Message);
+                }
+                String readIn = sp.ReadLine();
+
+                return HexToInt(readIn);
             }
             //based off Python code PyObd            
             //Sensor("\(.+?\)", "\(.+?\)", \(.+?\),"\(.+?\),
@@ -171,7 +221,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("010D");
-                ret.result = "";
+                ret.result = String.Format("{0} MPH?",ret.RawValue/1.609);
                 ret.name = "           Vehicle Speed";
                 return ret;
             }
