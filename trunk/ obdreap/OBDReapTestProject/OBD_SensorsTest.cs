@@ -48,16 +48,17 @@ namespace OBDReapTestProject
         //}
         //
         //Use TestInitialize to run code before running each test
-        //[TestInitialize()]
-        //public void MyTestInitialize()
-        //{
-        //}
+        [TestInitialize()]
+        public void MyTestInitialize()
+        {
+        }
         //
         //Use TestCleanup to run code after each test has run
-        //[TestCleanup()]
-        //public void MyTestCleanup()
-        //{
-        //}
+        [TestCleanup()]
+        public void MyTestCleanup()
+        {
+            
+        }
         //
         #endregion
 
@@ -92,7 +93,8 @@ namespace OBDReapTestProject
             OBD.Sensors.ReturnSet expected = new OBD.Sensors.ReturnSet();            
             OBD.Sensors.ReturnSet actual;
             actual = target.Vehicle_Speed();
-            Assert.AreNotEqual("", actual.RawValue);            
+            System.Console.WriteLine(actual.result,actual.RawValue);
+            Assert.AreNotEqual("", actual.result);            
         }
 
         /// <summary>
@@ -105,8 +107,7 @@ namespace OBDReapTestProject
             OBD.Sensors.ReturnSet expected = null; // TODO: Initialize to an appropriate value
             OBD.Sensors.ReturnSet actual;
             actual = target.Timing_Advance();
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            Assert.AreNotEqual(expected, actual);            
         }
 
         /// <summary>
@@ -614,6 +615,20 @@ namespace OBDReapTestProject
         {
             OBD.Sensors target = new OBD.Sensors();
             Assert.Inconclusive("TODO: Implement code to verify target");
+        }
+
+        /// <summary>
+        ///A test for MaintainConnection
+        ///</summary>
+        [TestMethod()]
+        [DeploymentItem("OBDReap.exe")]
+        public void MaintainConnectionTest()
+        {
+            OBD_Accessor.Sensors target = new OBD_Accessor.Sensors(); // TODO: Initialize to an appropriate value
+            int expected = 0; // TODO: Initialize to an appropriate value
+            int actual;
+            actual = target.MaintainConnection();
+            Assert.AreEqual(expected, actual);            
         }
     }
 }
