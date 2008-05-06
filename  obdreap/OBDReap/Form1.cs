@@ -11,34 +11,59 @@ namespace OBDReap
     public partial class Form1 : Form
     {
         public OBD.Sensors.ReturnSet strRes;
-        public OBD.Sensors obd = new OBD.Sensors();
+        public OBD.Sensors obd;
+        public String[] ports;
+        public bool bLoop = true;
         public Form1()
         {
             InitializeComponent();
+            ports = System.IO.Ports.SerialPort.GetPortNames();
+            comboBox1.Items.AddRange(ports);
             
+            
+            obd = new OBD.Sensors(this);            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //while (true)
-            //{
+            bLoop = true;
+            while (bLoop)
+            {
                 strRes = obd.Vehicle_Speed();
                 if (strRes.result != "")
                 {
                     textBox1.Text = strRes.result;
                 }
-            //}
+                Application.DoEvents();
+            }
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            bLoop = false;
+            toolStripStatusLabel1.Text = "Halted!";
+            //obd.sp.Close();
+            //obd.sp = null;
         }
     }
     
     public class OBD
     {
+       
         /// <summary>
         /// 
         /// </summary>
         public class Sensors
         {
+            String readIn = "";
+            Form1 frm;
+            public Sensors() { }
+            public Sensors(Form1 frm)
+            {
+                this.frm = frm;                
+            }
+
             ~Sensors()
             {
                 if (sp != null)
@@ -50,7 +75,7 @@ namespace OBDReap
 
             String[] ports =
                 System.IO.Ports.SerialPort.GetPortNames();
-            System.IO.Ports.SerialPort sp=null;
+            public System.IO.Ports.SerialPort sp=null;
             public class ReturnSet
             {
                 public String result;
@@ -58,11 +83,22 @@ namespace OBDReap
                 public String modifier;
                 public String name;
             }
+            /// <summary>
+            /// Maintains the connection.
+            /// 
+            /// We want the connection to fail if it doesn't exist but also to follow that old maxim.
+            /// "If at first you don't succeed, try, try again" Rudyard Kipling (i think)
+            /// </summary>
+            /// <returns></returns>
             private int MaintainConnection()
             {
+                string selItem = frm.comboBox1.SelectedItem.ToString();
                 if (sp == null)
-                {                    
-                    sp = new System.IO.Ports.SerialPort("COM4", 9600, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+                {
+                    if (selItem == string.Empty)
+                        selItem = "COM4";
+                    sp = new System.IO.Ports.SerialPort(selItem, 9600, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+                    sp.ReadTimeout = 1000;
                     sp.Open();
                     sp.WriteLine("atz");
                     sp.WriteLine("ate0");
@@ -76,14 +112,17 @@ namespace OBDReap
                 try
                 {
                     sp.WriteLine(pid);
+                    readIn = sp.ReadLine();
+
                     //sp.Close();
                 }
-                catch (Exception exp)
+                catch (TimeoutException exp)
                 {
                     System.Diagnostics.Debug.WriteLine(exp.Message);
+                    frm.toolStripStatusLabel1.Text="Timeout but trying again ...";
+                    readIn = "0";
                 }
-                String readIn = sp.ReadLine();
-
+                
                 return HexToInt(readIn);
             }
             //based off Python code PyObd            
