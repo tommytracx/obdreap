@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6aecb98e-9c02-4325-88cd-e15c23c7f8e0" name="remote@DESKTOP 2008-05-04 17:11:51" runUser="DESKTOP\remote" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="83aba3ea-57f6-4249-8e07-3130942d9d3b">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\Documents and Settings\Administrator\My Documents\Projects\Published\TestResults" useDefaultDeploymentRoot="false" runDeploymentRoot="C:\Documents and Settings\Administrator\My Documents\Projects\Published\TestResults\remote_DESKTOP 2008-05-04 17_11_51">
+      <DeploymentItem filename="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReap\bin\Debug\OBDReap.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Error">
+    <Counters total="41" executed="41" error="0" failed="37" timeout="0" aborted="0" inconclusive="4" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DESKTOP" outcome="Error" timestamp="2008-05-04T17:12:03.5312500-05:00">
+        <Text>One of the background threads threw exception: System.ObjectDisposedException: Safe handle has been closed
+   at Microsoft.Win32.UnsafeNativeMethods.GetOverlappedResult(SafeFileHandle hFile, NativeOverlapped* lpOverlapped, Int32&amp; lpNumberOfBytesTransferred, Boolean bWait)
+   at System.IO.Ports.SerialStream.EventLoopRunner.WaitForCommEvent()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP" outcome="Error" timestamp="2008-05-04T17:12:51.6093750-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <Times creation="2008-05-04T17:11:51.9218750-05:00" queuing="2008-05-04T17:11:52.9843750-05:00" start="2008-05-04T17:11:53.1875000-05:00" finish="2008-05-04T17:12:51.6093750-05:00" />
+  <TestDefinitions>
+    <UnitTest name="BitStringTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="05d9f462-1f8f-b8df-388c-1724762f2858">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <DeploymentItems>
+        <DeploymentItem filename="OBDReap.exe" />
+      </DeploymentItems>
+      <Execution id="000a13ee-ab5c-478e-9ce9-9c47a797979d" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="BitStringTest" />
+    </UnitTest>
+    <UnitTest name="Fuel_System_StatusTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="988a5a50-f787-d696-beb5-18d2ffd4817b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b07acb1c-b6a9-428a-a0a8-e28f51a89ed3" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Fuel_System_StatusTest" />
+    </UnitTest>
+    <UnitTest name="OBD_SensorsConstructorTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="09bf6443-6779-c767-dc94-609331a6dcf2">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d9efde6f-ab6e-4a96-b85b-6b25a0b6f930" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="OBD_SensorsConstructorTest" />
+    </UnitTest>
+    <UnitTest name="DTC_Causing_Freeze_FrameTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="75ab77c2-8ece-44ad-582e-a3f2be54432a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="c7b02ab3-5735-495a-9750-374ad829f576" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="DTC_Causing_Freeze_FrameTest" />
+    </UnitTest>
+    <UnitTest name="Coolant_TemperatureTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="1068b125-7e20-f5ad-a067-c696cae3e38b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="2b5a6d16-1209-4087-8395-c9a546db11c9" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Coolant_TemperatureTest" />
+    </UnitTest>
+    <UnitTest name="Aux_input_statusTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="4bf69307-4792-89fb-074f-e8332a603ebc">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d860a847-9bcf-4063-88ae-0cc3510b4d86" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Aux_input_statusTest" />
+    </UnitTest>
+    <UnitTest name="Air_Flow_Rate_MAFTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="a72e4223-b465-17ca-fae0-70e98570c9ad">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="9b593594-18fc-401b-9918-87801ab2fc33" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Air_Flow_Rate_MAFTest" />
+    </UnitTest>
+    <UnitTest name="Supported_PIDsTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="63bee9b4-2d17-54f4-a756-36c3c7cd634a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="61a3badd-1b9c-412c-94d3-a69c96b3d340" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBDReap_SensorsTest, OBDReapTestProject" name="Supported_PIDsTest" />
+    </UnitTest>
+    <UnitTest name="Time_Since_Engine_StartTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="9a6c8915-56d4-4a82-9bc8-9e322e8ae098">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="f068f675-a74b-41b1-9bfa-e234d86d868b" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Time_Since_Engine_StartTest" />
+    </UnitTest>
+    <UnitTest name="TranslateCodeTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="591b47a2-441f-bec8-c6b7-280228b6867d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="2fdcc3a2-cf32-4a72-bda5-a3b06b3e1e6d" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBDTest, OBDReapTestProject" name="TranslateCodeTest" />
+    </UnitTest>
+    <UnitTest name="GetCmdTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="ed159f69-05bc-cf8d-cbdb-b35557e06dfe">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <DeploymentItems>
+        <DeploymentItem filename="OBDReap.exe" />
+      </DeploymentItems>
+      <Execution id="26d14ef2-12e1-4a7d-a1f6-28c5c3616772" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="GetCmdTest" />
+    </UnitTest>
+    <UnitTest name="Short_Term_Fuel_Trim_1Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="47f8fb12-9b9f-9c40-e21c-ea2a6adbc222">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="7c0c2a22-fb9e-4008-a5c5-c7f4eb56dca4" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Short_Term_Fuel_Trim_1Test" />
+    </UnitTest>
+    <UnitTest name="Engine_Run_with_MIL_onTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="ccb9cf6e-2029-420d-04ea-22db59cdf5e8">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="ad21f08a-22f6-494c-836a-0c08037d4566" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Engine_Run_with_MIL_onTest" />
+    </UnitTest>
+    <UnitTest name="O2_Sensor_2_4Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="82e026a2-a98a-7f03-ab75-fcc143cd663c">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="618e2a6a-0421-4703-8080-7f6c73ffece4" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="O2_Sensor_2_4Test" />
+    </UnitTest>
+    <UnitTest name="O2_Sensor_1_1Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="c87d0368-e92e-cbd1-44b9-4478b4ca0633">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b0e57f6d-b70f-4a72-8b68-8a528fded5af" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="O2_Sensor_1_1Test" />
+    </UnitTest>
+    <UnitTest name="ParseOutBitsTest1" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="21f4b005-288f-ec31-490e-c85c6f0bfb5b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <DeploymentItems>
+        <DeploymentItem filename="OBDReap.exe" />
+      </DeploymentItems>
+      <Execution id="5c86beb4-55d7-41a7-8176-8361bd6642b9" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="ParseOutBitsTest1" />
+    </UnitTest>
+    <UnitTest name="O2_Sensor_2_2Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="80c77f9f-63c3-1416-82a8-2bde9f889de6">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="5811957e-fa5f-4a76-85e4-49ac1ff1c40d" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="O2_Sensor_2_2Test" />
+    </UnitTest>
+    <UnitTest name="MaintainConnectionTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="756fc45f-2fac-3bf5-e3b8-ee7efe790953">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <DeploymentItems>
+        <DeploymentItem filename="OBDReap.exe" />
+      </DeploymentItems>
+      <Execution id="61df0b81-d686-45df-80f7-ee687b27c840" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="MaintainConnectionTest" />
+    </UnitTest>
+    <UnitTest name="O2_Sensor_1_4Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="c70e5bab-d732-2b4e-7cd6-4c06c8749449">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d41c8ddb-67b9-4c8d-ac17-e60fa53d0f80" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="O2_Sensor_1_4Test" />
+    </UnitTest>
+    <UnitTest name="O2_Sensor_2_1Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="a42be449-56e4-7354-53f9-2d2f7f274b5f">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="c0ccfeaf-3512-49e6-b267-07eab980cc81" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="O2_Sensor_2_1Test" />
+    </UnitTest>
+    <UnitTest name="Location_of_O2_sensors_2Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="77438b0f-37be-a771-73fe-b9c1e2e16842">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="44f2d08b-cd6c-4727-ae37-f71ee84fdbd5" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Location_of_O2_sensors_2Test" />
+    </UnitTest>
+    <UnitTest name="Intake_Air_TempTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="9ce5d507-1647-2951-dfd9-d61272508026">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="be0e7907-ae57-4c0c-a0af-e43ee2f69789" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Intake_Air_TempTest" />
+    </UnitTest>
+    <UnitTest name="Throttle_PositionTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="927993be-6fb9-c6f1-9872-7425ccc608ac">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="37a45fa8-779c-49c1-b29e-58761d254274" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Throttle_PositionTest" />
+    </UnitTest>
+    <UnitTest name="Calculated_Load_ValueTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="6309b1f8-924e-61ad-cdef-75ef61dc7ae7">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="ca85e775-97d9-4559-b533-75572b63d856" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Calculated_Load_ValueTest" />
+    </UnitTest>
+    <UnitTest name="O2_Sensor_2_3Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="f624ab45-ddb0-2f36-95f4-72db1760647f">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="ed2120b5-9103-44df-9b73-e588a89f89d2" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="O2_Sensor_2_3Test" />
+    </UnitTest>
+    <UnitTest name="OBDConstructorTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="648d4df5-9148-1a71-ad0e-9dbc003bddd7">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="5d1c8e7e-792e-44be-978f-e6559719e42f" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBDTest, OBDReapTestProject" name="OBDConstructorTest" />
+    </UnitTest>
+    <UnitTest name="Long_Term_Fuel_Trim_1Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="3e282649-b1d7-efcc-16cb-88f797cfc6ce">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="a7dcab00-a579-4439-b2aa-6e04baf90637" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Long_Term_Fuel_Trim_1Test" />
+    </UnitTest>
+    <UnitTest name="Secondary_Air_StatusTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="097a3ffe-b38c-5f4a-e73d-c482abbb484e">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="c468d85e-8430-4103-95ee-d6b52560f70c" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Secondary_Air_StatusTest" />
+    </UnitTest>
+    <UnitTest name="Supported_PIDsTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="3e8a8bc0-64de-4cfa-35db-7591df287936">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="131d8a91-93a8-4d6e-863f-14f6e54b7800" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Supported_PIDsTest" />
+    </UnitTest>
+    <UnitTest name="Status_Since_DTC_ClearedTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="352ccee4-eca2-33a6-ce4c-5f8f8e0179a4">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="79c7e261-2a37-4e78-9aa7-a3daae2670f4" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Status_Since_DTC_ClearedTest" />
+    </UnitTest>
+    <UnitTest name="Long_Term_Fuel_Trim_2Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="7096e9a3-af4f-deed-9427-dd1fb34b4063">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="55887dc3-cd24-4f40-8264-635253026ebf" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Long_Term_Fuel_Trim_2Test" />
+    </UnitTest>
+    <UnitTest name="O2_Sensor_1_3Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="73ddee02-7102-e28c-4588-8c7556c6eb14">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="5aa64518-04ef-4bea-8c0d-563bb59fc3ce" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="O2_Sensor_1_3Test" />
+    </UnitTest>
+    <UnitTest name="O2_Sensor_1_2Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="0863d3e1-1c58-6b48-563e-ebc0f984fea1">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="2064ea02-4fb7-4b9e-b675-c4a7c4d42bbe" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="O2_Sensor_1_2Test" />
+    </UnitTest>
+    <UnitTest name="Intake_Manifold_PressureTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="5d2cce68-aa58-3fbb-5388-3969c9367d31">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="08ec5ffe-fc19-4f43-adb4-6713ed7f08c4" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Intake_Manifold_PressureTest" />
+    </UnitTest>
+    <UnitTest name="Engine_RPMTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="54ba4e7e-6b1b-64e4-9151-a54e121eb723">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="13009882-4cb0-4e68-9060-6e76b25687c9" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Engine_RPMTest" />
+    </UnitTest>
+    <UnitTest name="Fuel_Rail_PressureTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="1787a117-b381-761a-e33a-03fb6820ba59">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="ac1315fb-a02a-420a-8897-b7090c57267d" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Fuel_Rail_PressureTest" />
+    </UnitTest>
+    <UnitTest name="OBD_Sensors_ReturnSetConstructorTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="0b4904af-d164-e8fb-af8b-5582ee86bf64">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="c9eac32c-6b4b-47d0-bbe3-0120b4350432" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_Sensors_ReturnSetTest, OBDReapTestProject" name="OBD_Sensors_ReturnSetConstructorTest" />
+    </UnitTest>
+    <UnitTest name="HexToIntTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="ae76524a-50d7-1f33-eda8-e0c10f6c5458">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="9ac13d01-ad5c-49d5-9e18-78ef1dab78ff" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="HexToIntTest" />
+    </UnitTest>
+    <UnitTest name="OBD_DesignationTest" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="1ca97c0e-7679-327b-94f2-a560c2146a14">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="42101041-36e7-4cfe-a081-e6086bf53ae5" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="OBD_DesignationTest" />
+    </UnitTest>
+    <UnitTest name="Location_of_O2_sensors_1Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="6cbf86d3-9c8c-9b6d-c242-da680a1936ff">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="e825ea8d-063a-4fe8-8bcc-f86ee7cf13f1" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Location_of_O2_sensors_1Test" />
+    </UnitTest>
+    <UnitTest name="Short_Term_Fuel_Trim_2Test" storage="c:\documents and settings\administrator\my documents\projects\published\obdreaptestproject\bin\debug\obdreaptestproject.dll" id="aeba56a4-9fc4-bed9-8d76-a816d04cd652">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="24c989f7-3f17-4f43-be5f-0e6d58ee87a5" />
+      <TestMethod codeBase="C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\bin\Debug\OBDReapTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OBDReapTestProject.OBD_SensorsTest, OBDReapTestProject" name="Short_Term_Fuel_Trim_2Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b4904af-d164-e8fb-af8b-5582ee86bf64" executionId="c9eac32c-6b4b-47d0-bbe3-0120b4350432" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a6c8915-56d4-4a82-9bc8-9e322e8ae098" executionId="f068f675-a74b-41b1-9bfa-e234d86d868b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="927993be-6fb9-c6f1-9872-7425ccc608ac" executionId="37a45fa8-779c-49c1-b29e-58761d254274" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e8a8bc0-64de-4cfa-35db-7591df287936" executionId="131d8a91-93a8-4d6e-863f-14f6e54b7800" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="352ccee4-eca2-33a6-ce4c-5f8f8e0179a4" executionId="79c7e261-2a37-4e78-9aa7-a3daae2670f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aeba56a4-9fc4-bed9-8d76-a816d04cd652" executionId="24c989f7-3f17-4f43-be5f-0e6d58ee87a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47f8fb12-9b9f-9c40-e21c-ea2a6adbc222" executionId="7c0c2a22-fb9e-4008-a5c5-c7f4eb56dca4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="097a3ffe-b38c-5f4a-e73d-c482abbb484e" executionId="c468d85e-8430-4103-95ee-d6b52560f70c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21f4b005-288f-ec31-490e-c85c6f0bfb5b" executionId="5c86beb4-55d7-41a7-8176-8361bd6642b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ca97c0e-7679-327b-94f2-a560c2146a14" executionId="42101041-36e7-4cfe-a081-e6086bf53ae5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82e026a2-a98a-7f03-ab75-fcc143cd663c" executionId="618e2a6a-0421-4703-8080-7f6c73ffece4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f624ab45-ddb0-2f36-95f4-72db1760647f" executionId="ed2120b5-9103-44df-9b73-e588a89f89d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="80c77f9f-63c3-1416-82a8-2bde9f889de6" executionId="5811957e-fa5f-4a76-85e4-49ac1ff1c40d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a42be449-56e4-7354-53f9-2d2f7f274b5f" executionId="c0ccfeaf-3512-49e6-b267-07eab980cc81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c70e5bab-d732-2b4e-7cd6-4c06c8749449" executionId="d41c8ddb-67b9-4c8d-ac17-e60fa53d0f80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73ddee02-7102-e28c-4588-8c7556c6eb14" executionId="5aa64518-04ef-4bea-8c0d-563bb59fc3ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0863d3e1-1c58-6b48-563e-ebc0f984fea1" executionId="2064ea02-4fb7-4b9e-b675-c4a7c4d42bbe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c87d0368-e92e-cbd1-44b9-4478b4ca0633" executionId="b0e57f6d-b70f-4a72-8b68-8a528fded5af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7096e9a3-af4f-deed-9427-dd1fb34b4063" executionId="55887dc3-cd24-4f40-8264-635253026ebf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e282649-b1d7-efcc-16cb-88f797cfc6ce" executionId="a7dcab00-a579-4439-b2aa-6e04baf90637" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77438b0f-37be-a771-73fe-b9c1e2e16842" executionId="44f2d08b-cd6c-4727-ae37-f71ee84fdbd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6cbf86d3-9c8c-9b6d-c242-da680a1936ff" executionId="e825ea8d-063a-4fe8-8bcc-f86ee7cf13f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d2cce68-aa58-3fbb-5388-3969c9367d31" executionId="08ec5ffe-fc19-4f43-adb4-6713ed7f08c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ce5d507-1647-2951-dfd9-d61272508026" executionId="be0e7907-ae57-4c0c-a0af-e43ee2f69789" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae76524a-50d7-1f33-eda8-e0c10f6c5458" executionId="9ac13d01-ad5c-49d5-9e18-78ef1dab78ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed159f69-05bc-cf8d-cbdb-b35557e06dfe" executionId="26d14ef2-12e1-4a7d-a1f6-28c5c3616772" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="988a5a50-f787-d696-beb5-18d2ffd4817b" executionId="b07acb1c-b6a9-428a-a0a8-e28f51a89ed3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1787a117-b381-761a-e33a-03fb6820ba59" executionId="ac1315fb-a02a-420a-8897-b7090c57267d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ccb9cf6e-2029-420d-04ea-22db59cdf5e8" executionId="ad21f08a-22f6-494c-836a-0c08037d4566" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="54ba4e7e-6b1b-64e4-9151-a54e121eb723" executionId="13009882-4cb0-4e68-9060-6e76b25687c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="75ab77c2-8ece-44ad-582e-a3f2be54432a" executionId="c7b02ab3-5735-495a-9750-374ad829f576" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1068b125-7e20-f5ad-a067-c696cae3e38b" executionId="2b5a6d16-1209-4087-8395-c9a546db11c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6309b1f8-924e-61ad-cdef-75ef61dc7ae7" executionId="ca85e775-97d9-4559-b533-75572b63d856" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="05d9f462-1f8f-b8df-388c-1724762f2858" executionId="000a13ee-ab5c-478e-9ce9-9c47a797979d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4bf69307-4792-89fb-074f-e8332a603ebc" executionId="d860a847-9bcf-4063-88ae-0cc3510b4d86" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a72e4223-b465-17ca-fae0-70e98570c9ad" executionId="9b593594-18fc-401b-9918-87801ab2fc33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="09bf6443-6779-c767-dc94-609331a6dcf2" executionId="d9efde6f-ab6e-4a96-b85b-6b25a0b6f930" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63bee9b4-2d17-54f4-a756-36c3c7cd634a" executionId="61a3badd-1b9c-412c-94d3-a69c96b3d340" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="591b47a2-441f-bec8-c6b7-280228b6867d" executionId="2fdcc3a2-cf32-4a72-bda5-a3b06b3e1e6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="648d4df5-9148-1a71-ad0e-9dbc003bddd7" executionId="5d1c8e7e-792e-44be-978f-e6559719e42f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="756fc45f-2fac-3bf5-e3b8-ee7efe790953" executionId="61df0b81-d686-45df-80f7-ee687b27c840" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c9eac32c-6b4b-47d0-bbe3-0120b4350432" testId="0b4904af-d164-e8fb-af8b-5582ee86bf64" testName="OBD_Sensors_ReturnSetConstructorTest" computerName="DESKTOP" duration="00:00:00.0479171" startTime="2008-05-04T17:11:53.2656250-05:00" endTime="2008-05-04T17:11:53.5781250-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at OBDReapTestProject.OBD_Sensors_ReturnSetTest.OBD_Sensors_ReturnSetConstructorTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_Sensors_ReturnSetTest.cs:line 72
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f068f675-a74b-41b1-9bfa-e234d86d868b" testId="9a6c8915-56d4-4a82-9bc8-9e322e8ae098" testName="Time_Since_Engine_StartTest" computerName="DESKTOP" duration="00:00:00.0184188" startTime="2008-05-04T17:11:53.5781250-05:00" endTime="2008-05-04T17:11:53.5937500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Time_Since_Engine_StartTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 123
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="37a45fa8-779c-49c1-b29e-58761d254274" testId="927993be-6fb9-c6f1-9872-7425ccc608ac" testName="Throttle_PositionTest" computerName="DESKTOP" duration="00:00:00.0140407" startTime="2008-05-04T17:11:53.6093750-05:00" endTime="2008-05-04T17:11:53.6250000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Throttle_PositionTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 137
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="131d8a91-93a8-4d6e-863f-14f6e54b7800" testId="3e8a8bc0-64de-4cfa-35db-7591df287936" testName="Supported_PIDsTest" computerName="DESKTOP" duration="00:00:00.0163119" startTime="2008-05-04T17:11:53.6250000-05:00" endTime="2008-05-04T17:11:53.6562500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Supported_PIDsTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 151
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="79c7e261-2a37-4e78-9aa7-a3daae2670f4" testId="352ccee4-eca2-33a6-ce4c-5f8f8e0179a4" testName="Status_Since_DTC_ClearedTest" computerName="DESKTOP" duration="00:00:00.2584726" startTime="2008-05-04T17:11:53.6562500-05:00" endTime="2008-05-04T17:11:53.6718750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Status_Since_DTC_ClearedTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 165
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="24c989f7-3f17-4f43-be5f-0e6d58ee87a5" testId="aeba56a4-9fc4-bed9-8d76-a816d04cd652" testName="Short_Term_Fuel_Trim_2Test" computerName="DESKTOP" duration="-00:00:00.2345784" startTime="2008-05-04T17:11:53.6875000-05:00" endTime="2008-05-04T17:11:53.7031250-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Short_Term_Fuel_Trim_2Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 179
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7c0c2a22-fb9e-4008-a5c5-c7f4eb56dca4" testId="47f8fb12-9b9f-9c40-e21c-ea2a6adbc222" testName="Short_Term_Fuel_Trim_1Test" computerName="DESKTOP" duration="-00:00:00.2338968" startTime="2008-05-04T17:11:53.7031250-05:00" endTime="2008-05-04T17:11:53.7187500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Short_Term_Fuel_Trim_1Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 193
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c468d85e-8430-4103-95ee-d6b52560f70c" testId="097a3ffe-b38c-5f4a-e73d-c482abbb484e" testName="Secondary_Air_StatusTest" computerName="DESKTOP" duration="00:00:00.0123736" startTime="2008-05-04T17:11:53.7343750-05:00" endTime="2008-05-04T17:11:53.7500000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Secondary_Air_StatusTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 207
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5c86beb4-55d7-41a7-8176-8361bd6642b9" testId="21f4b005-288f-ec31-490e-c85c6f0bfb5b" testName="ParseOutBitsTest1" computerName="DESKTOP" duration="-00:00:00.1539343" startTime="2008-05-04T17:11:53.7500000-05:00" endTime="2008-05-04T17:11:53.8437500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;System.Boolean[]&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.ParseOutBitsTest1() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 223
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="42101041-36e7-4cfe-a081-e6086bf53ae5" testId="1ca97c0e-7679-327b-94f2-a560c2146a14" testName="OBD_DesignationTest" computerName="DESKTOP" duration="-00:00:00.2342555" startTime="2008-05-04T17:11:53.8593750-05:00" endTime="2008-05-04T17:11:53.8750000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.OBD_DesignationTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 237
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="618e2a6a-0421-4703-8080-7f6c73ffece4" testId="82e026a2-a98a-7f03-ab75-fcc143cd663c" testName="O2_Sensor_2_4Test" computerName="DESKTOP" duration="-00:00:00.2337829" startTime="2008-05-04T17:11:53.8750000-05:00" endTime="2008-05-04T17:11:53.8906250-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.O2_Sensor_2_4Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 251
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ed2120b5-9103-44df-9b73-e588a89f89d2" testId="f624ab45-ddb0-2f36-95f4-72db1760647f" testName="O2_Sensor_2_3Test" computerName="DESKTOP" duration="-00:00:00.2344130" startTime="2008-05-04T17:11:53.9062500-05:00" endTime="2008-05-04T17:11:53.9218750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.O2_Sensor_2_3Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 265
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5811957e-fa5f-4a76-85e4-49ac1ff1c40d" testId="80c77f9f-63c3-1416-82a8-2bde9f889de6" testName="O2_Sensor_2_2Test" computerName="DESKTOP" duration="00:00:00.0118238" startTime="2008-05-04T17:11:53.9218750-05:00" endTime="2008-05-04T17:11:53.9375000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.O2_Sensor_2_2Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 279
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c0ccfeaf-3512-49e6-b267-07eab980cc81" testId="a42be449-56e4-7354-53f9-2d2f7f274b5f" testName="O2_Sensor_2_1Test" computerName="DESKTOP" duration="00:00:00.0116161" startTime="2008-05-04T17:11:53.9531250-05:00" endTime="2008-05-04T17:11:53.9687500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.O2_Sensor_2_1Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 293
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d41c8ddb-67b9-4c8d-ac17-e60fa53d0f80" testId="c70e5bab-d732-2b4e-7cd6-4c06c8749449" testName="O2_Sensor_1_4Test" computerName="DESKTOP" duration="00:00:00.0125387" startTime="2008-05-04T17:11:53.9687500-05:00" endTime="2008-05-04T17:11:53.9843750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.O2_Sensor_1_4Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 307
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5aa64518-04ef-4bea-8c0d-563bb59fc3ce" testId="73ddee02-7102-e28c-4588-8c7556c6eb14" testName="O2_Sensor_1_3Test" computerName="DESKTOP" duration="00:00:00.0119403" startTime="2008-05-04T17:11:54.0000000-05:00" endTime="2008-05-04T17:11:54.0156250-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.O2_Sensor_1_3Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 321
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2064ea02-4fb7-4b9e-b675-c4a7c4d42bbe" testId="0863d3e1-1c58-6b48-563e-ebc0f984fea1" testName="O2_Sensor_1_2Test" computerName="DESKTOP" duration="00:00:00.0115012" startTime="2008-05-04T17:11:54.0156250-05:00" endTime="2008-05-04T17:11:54.0468750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.O2_Sensor_1_2Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 335
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b0e57f6d-b70f-4a72-8b68-8a528fded5af" testId="c87d0368-e92e-cbd1-44b9-4478b4ca0633" testName="O2_Sensor_1_1Test" computerName="DESKTOP" duration="00:00:00.0117324" startTime="2008-05-04T17:11:54.0468750-05:00" endTime="2008-05-04T17:11:54.0625000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.O2_Sensor_1_1Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 349
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="55887dc3-cd24-4f40-8264-635253026ebf" testId="7096e9a3-af4f-deed-9427-dd1fb34b4063" testName="Long_Term_Fuel_Trim_2Test" computerName="DESKTOP" duration="-00:00:00.2344616" startTime="2008-05-04T17:11:54.0781250-05:00" endTime="2008-05-04T17:11:54.0937500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Long_Term_Fuel_Trim_2Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 363
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a7dcab00-a579-4439-b2aa-6e04baf90637" testId="3e282649-b1d7-efcc-16cb-88f797cfc6ce" testName="Long_Term_Fuel_Trim_1Test" computerName="DESKTOP" duration="-00:00:00.2340804" startTime="2008-05-04T17:11:54.0937500-05:00" endTime="2008-05-04T17:11:54.1093750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Long_Term_Fuel_Trim_1Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 377
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="44f2d08b-cd6c-4727-ae37-f71ee84fdbd5" testId="77438b0f-37be-a771-73fe-b9c1e2e16842" testName="Location_of_O2_sensors_2Test" computerName="DESKTOP" duration="00:00:00.2576888" startTime="2008-05-04T17:11:54.1250000-05:00" endTime="2008-05-04T17:11:54.1406250-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Location_of_O2_sensors_2Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 391
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e825ea8d-063a-4fe8-8bcc-f86ee7cf13f1" testId="6cbf86d3-9c8c-9b6d-c242-da680a1936ff" testName="Location_of_O2_sensors_1Test" computerName="DESKTOP" duration="-00:00:00.2139454" startTime="2008-05-04T17:11:54.1406250-05:00" endTime="2008-05-04T17:11:54.1718750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Location_of_O2_sensors_1Test() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 405
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="08ec5ffe-fc19-4f43-adb4-6713ed7f08c4" testId="5d2cce68-aa58-3fbb-5388-3969c9367d31" testName="Intake_Manifold_PressureTest" computerName="DESKTOP" duration="-00:00:00.2343788" startTime="2008-05-04T17:11:54.1875000-05:00" endTime="2008-05-04T17:11:54.2031250-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Intake_Manifold_PressureTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 419
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="be0e7907-ae57-4c0c-a0af-e43ee2f69789" testId="9ce5d507-1647-2951-dfd9-d61272508026" testName="Intake_Air_TempTest" computerName="DESKTOP" duration="-00:00:00.2329588" startTime="2008-05-04T17:11:54.2031250-05:00" endTime="2008-05-04T17:11:54.2187500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Intake_Air_TempTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 433
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9ac13d01-ad5c-49d5-9e18-78ef1dab78ff" testId="ae76524a-50d7-1f33-eda8-e0c10f6c5458" testName="HexToIntTest" computerName="DESKTOP" duration="00:00:00.0172453" startTime="2008-05-04T17:11:54.2343750-05:00" endTime="2008-05-04T17:11:54.2500000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method OBDReapTestProject.OBD_SensorsTest.HexToIntTest threw exception:  System.FormatException: Input string was not in a correct format..</Message>
+          <StackTrace>    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s, NumberStyles style)
+   at OBDReap.OBD.Sensors.HexToInt(String hex) in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReap\Form1.cs:line 66
+   at OBDReapTestProject.OBD_SensorsTest.HexToIntTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 447
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="26d14ef2-12e1-4a7d-a1f6-28c5c3616772" testId="ed159f69-05bc-cf8d-cbdb-b35557e06dfe" testName="GetCmdTest" computerName="DESKTOP" duration="00:00:00.0136432" startTime="2008-05-04T17:11:54.2656250-05:00" endTime="2008-05-04T17:11:54.2812500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;2730&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.GetCmdTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 464
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b07acb1c-b6a9-428a-a0a8-e28f51a89ed3" testId="988a5a50-f787-d696-beb5-18d2ffd4817b" testName="Fuel_System_StatusTest" computerName="DESKTOP" duration="-00:00:00.2340778" startTime="2008-05-04T17:11:54.2812500-05:00" endTime="2008-05-04T17:11:54.2968750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Fuel_System_StatusTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 478
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ac1315fb-a02a-420a-8897-b7090c57267d" testId="1787a117-b381-761a-e33a-03fb6820ba59" testName="Fuel_Rail_PressureTest" computerName="DESKTOP" duration="00:00:00.0125416" startTime="2008-05-04T17:11:54.3125000-05:00" endTime="2008-05-04T17:11:54.3281250-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Fuel_Rail_PressureTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 492
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ad21f08a-22f6-494c-836a-0c08037d4566" testId="ccb9cf6e-2029-420d-04ea-22db59cdf5e8" testName="Engine_Run_with_MIL_onTest" computerName="DESKTOP" duration="-00:00:00.2341200" startTime="2008-05-04T17:11:54.3281250-05:00" endTime="2008-05-04T17:11:54.3437500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Engine_Run_with_MIL_onTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 506
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="13009882-4cb0-4e68-9060-6e76b25687c9" testId="54ba4e7e-6b1b-64e4-9151-a54e121eb723" testName="Engine_RPMTest" computerName="DESKTOP" duration="00:00:00.2581003" startTime="2008-05-04T17:11:54.3593750-05:00" endTime="2008-05-04T17:11:54.3750000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Engine_RPMTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 520
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c7b02ab3-5735-495a-9750-374ad829f576" testId="75ab77c2-8ece-44ad-582e-a3f2be54432a" testName="DTC_Causing_Freeze_FrameTest" computerName="DESKTOP" duration="00:00:00.0327821" startTime="2008-05-04T17:11:54.3750000-05:00" endTime="2008-05-04T17:11:54.4218750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.DTC_Causing_Freeze_FrameTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 534
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2b5a6d16-1209-4087-8395-c9a546db11c9" testId="1068b125-7e20-f5ad-a067-c696cae3e38b" testName="Coolant_TemperatureTest" computerName="DESKTOP" duration="00:00:00.2579307" startTime="2008-05-04T17:11:54.4218750-05:00" endTime="2008-05-04T17:11:54.4375000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Coolant_TemperatureTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 548
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ca85e775-97d9-4559-b533-75572b63d856" testId="6309b1f8-924e-61ad-cdef-75ef61dc7ae7" testName="Calculated_Load_ValueTest" computerName="DESKTOP" duration="-00:00:00.2345625" startTime="2008-05-04T17:11:54.4531250-05:00" endTime="2008-05-04T17:11:54.4687500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Calculated_Load_ValueTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 562
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="000a13ee-ab5c-478e-9ce9-9c47a797979d" testId="05d9f462-1f8f-b8df-388c-1724762f2858" testName="BitStringTest" computerName="DESKTOP" duration="-00:00:00.2219199" startTime="2008-05-04T17:11:54.4687500-05:00" endTime="2008-05-04T17:11:54.5000000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method OBDReapTestProject.OBD_SensorsTest.BitStringTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at OBDReap.OBD.Sensors.BitString(Boolean[] bBits) in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReap\Form1.cs:line 80
+   at OBDReap.OBD_Accessor.Sensors.BitString(Boolean[] bBits)
+   at OBDReapTestProject.OBD_SensorsTest.BitStringTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 577
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d860a847-9bcf-4063-88ae-0cc3510b4d86" testId="4bf69307-4792-89fb-074f-e8332a603ebc" testName="Aux_input_statusTest" computerName="DESKTOP" duration="00:00:00.0120499" startTime="2008-05-04T17:11:54.5000000-05:00" endTime="2008-05-04T17:11:54.5312500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Aux_input_statusTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 592
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9b593594-18fc-401b-9918-87801ab2fc33" testId="a72e4223-b465-17ca-fae0-70e98570c9ad" testName="Air_Flow_Rate_MAFTest" computerName="DESKTOP" duration="00:00:00.0118091" startTime="2008-05-04T17:11:54.5312500-05:00" endTime="2008-05-04T17:11:54.5468750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;OBDReap.OBD+Sensors+ReturnSet&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.Air_Flow_Rate_MAFTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 606
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d9efde6f-ab6e-4a96-b85b-6b25a0b6f930" testId="09bf6443-6779-c767-dc94-609331a6dcf2" testName="OBD_SensorsConstructorTest" computerName="DESKTOP" duration="00:00:00.2553787" startTime="2008-05-04T17:11:54.5468750-05:00" endTime="2008-05-04T17:11:54.5625000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.OBD_SensorsConstructorTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 617
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="61a3badd-1b9c-412c-94d3-a69c96b3d340" testId="63bee9b4-2d17-54f4-a756-36c3c7cd634a" testName="Supported_PIDsTest" computerName="DESKTOP" duration="-00:00:00.2336600" startTime="2008-05-04T17:11:54.5781250-05:00" endTime="2008-05-04T17:11:54.5937500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;2730&gt;. Actual:&lt;01010101010100000&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBDReap_SensorsTest.Supported_PIDsTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBDReap_SensorsTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2fdcc3a2-cf32-4a72-bda5-a3b06b3e1e6d" testId="591b47a2-441f-bec8-c6b7-280228b6867d" testName="TranslateCodeTest" computerName="DESKTOP" duration="00:00:00.0096255" startTime="2008-05-04T17:11:54.5937500-05:00" endTime="2008-05-04T17:11:54.6093750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at OBDReapTestProject.OBDTest.TranslateCodeTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBDTest.cs:line 73
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5d1c8e7e-792e-44be-978f-e6559719e42f" testId="648d4df5-9148-1a71-ad0e-9dbc003bddd7" testName="OBDConstructorTest" computerName="DESKTOP" duration="-00:00:00.2373196" startTime="2008-05-04T17:11:54.6250000-05:00" endTime="2008-05-04T17:11:54.6250000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at OBDReapTestProject.OBDTest.OBDConstructorTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBDTest.cs:line 83
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="61df0b81-d686-45df-80f7-ee687b27c840" testId="756fc45f-2fac-3bf5-e3b8-ee7efe790953" testName="MaintainConnectionTest" computerName="DESKTOP" duration="00:00:08.6043685" startTime="2008-05-04T17:11:54.6406250-05:00" endTime="2008-05-04T17:12:03.5000000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;-1&gt;. </Message>
+          <StackTrace>   at OBDReapTestProject.OBD_SensorsTest.MaintainConnectionTest() in C:\Documents and Settings\Administrator\My Documents\Projects\Published\OBDReapTestProject\OBD_SensorsTest.cs:line 631
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
