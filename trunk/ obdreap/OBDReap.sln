@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		OBDReap1.vsmdi = OBDReap1.vsmdi
 	EndProjectSection
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{5C3BFB53-C9CD-4CFD-862B-2696474317DB}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = OBDReap1.vsmdi
@@ -29,6 +31,8 @@ Global
 		{9541011D-F162-46BF-BCE6-8B73EAF1B97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9541011D-F162-46BF-BCE6-8B73EAF1B97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9541011D-F162-46BF-BCE6-8B73EAF1B97A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C3BFB53-C9CD-4CFD-862B-2696474317DB}.Debug|Any CPU.ActiveCfg = Debug
+		{5C3BFB53-C9CD-4CFD-862B-2696474317DB}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
