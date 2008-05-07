@@ -14,6 +14,7 @@ namespace OBDReap
         public OBD.Sensors obd;
         public String[] ports;
         public bool bLoop = true;
+
         public Form1()
         {
             InitializeComponent();
@@ -22,6 +23,10 @@ namespace OBDReap
             
             
             obd = new OBD.Sensors(this);            
+        }
+        ~Form1()
+        {
+            //obd = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,6 +63,19 @@ namespace OBDReap
         {
             String readIn = "";
             Form1 frm;
+            String[] ports =
+                    System.IO.Ports.SerialPort.GetPortNames();
+            public static System.IO.Ports.SerialPort sp;
+            public System.IO.Ports.SerialPort SP {
+                get
+                {
+                    return sp;
+                }
+                set
+                {
+                    sp = value;
+                }
+            }
             public Sensors() { }
             public Sensors(Form1 frm)
             {
@@ -68,14 +86,11 @@ namespace OBDReap
             {
                 if (sp != null)
                 {
-                    sp.Close();
-                    sp = null;
+                    //sp.Close();
+                   // sp = null;
                 }
             }
 
-            String[] ports =
-                System.IO.Ports.SerialPort.GetPortNames();
-            public System.IO.Ports.SerialPort sp=null;
             public class ReturnSet
             {
                 public String result;
@@ -99,7 +114,7 @@ namespace OBDReap
                         selItem = "COM4";
                     sp = new System.IO.Ports.SerialPort(selItem, 9600, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
                     sp.ReadTimeout = 1000;
-                    sp.Open();
+                    sp.Open();                    
                     sp.WriteLine("atz");
                     sp.WriteLine("ate0");
                 }
@@ -256,6 +271,11 @@ namespace OBDReap
                 ret.name = "              Engine RPM";
                 return ret;
             }
+            /// <summary>
+            /// Vehicle speed.
+            /// Value / 1.609 not sure why though
+            /// </summary>
+            /// <returns></returns>
             public ReturnSet Vehicle_Speed()
             {
                 ReturnSet ret = new ReturnSet();
@@ -264,11 +284,16 @@ namespace OBDReap
                 ret.name = "           Vehicle Speed";
                 return ret;
             }
+            /// <summary>
+            /// Timing advance.
+            /// 
+            /// </summary>
+            /// <returns></returns>
             public ReturnSet Timing_Advance()
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("010E");
-                ret.result = "";
+                ret.result = String.Format("{0}", (ret.RawValue - 128) / 2.0);
                 ret.name = "          Timing Advance";
                 return ret;
             }
@@ -276,7 +301,7 @@ namespace OBDReap
             {
                 ReturnSet ret = new ReturnSet();
                 ret.RawValue = GetCmd("010F");
-                ret.result = "";
+                ret.result = String.Format("{0}", (ret.RawValue - 40) );
                 ret.name = "         Intake Air Temp";
                 return ret;
             }

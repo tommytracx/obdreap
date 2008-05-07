@@ -1,5 +1,6 @@
 ﻿using OBDReap;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 namespace OBDReapTestProject
 {
     
@@ -12,7 +13,7 @@ namespace OBDReapTestProject
     public class OBD_SensorsTest
     {
 
-
+        public Form1 frm;
         private TestContext testContextInstance;
 
         /// <summary>
@@ -36,10 +37,12 @@ namespace OBDReapTestProject
         //You can use the following additional attributes as you write your tests:
         //
         //Use ClassInitialize to run code before running the first test in the class
-        //[ClassInitialize()]
-        //public static void MyClassInitialize(TestContext testContext)
-        //{
-        //}
+        [ClassInitialize()]
+        public static void MyClassInitialize(TestContext testContext)
+        {
+            
+           
+        }
         //
         //Use ClassCleanup to run code after all tests in a class have run
         //[ClassCleanup()]
@@ -51,13 +54,24 @@ namespace OBDReapTestProject
         [TestInitialize()]
         public void MyTestInitialize()
         {
+            String[] ports;
+            frm = new Form1();
+            ports = System.IO.Ports.SerialPort.GetPortNames();
+            frm.comboBox1.Items.AddRange(ports);
+            frm.comboBox1.SelectedItem = "COM17";
+            
         }
         //
         //Use TestCleanup to run code after each test has run
         [TestCleanup()]
         public void MyTestCleanup()
         {
-            
+            if (frm.obd.SP != null)
+            {
+                frm.obd.SP.Close();
+                frm.obd.SP = null;
+            }
+            //frm.Close();            
         }
         //
         #endregion
@@ -89,7 +103,7 @@ namespace OBDReapTestProject
         [TestMethod()]
         public void Vehicle_SpeedTest()
         {
-            OBD.Sensors target = new OBD.Sensors(); // TODO: Initialize to an appropriate value
+            OBD.Sensors target = new OBD.Sensors(frm);
             OBD.Sensors.ReturnSet expected = new OBD.Sensors.ReturnSet();            
             OBD.Sensors.ReturnSet actual;
             actual = target.Vehicle_Speed();
@@ -103,11 +117,11 @@ namespace OBDReapTestProject
         [TestMethod()]
         public void Timing_AdvanceTest()
         {
-            OBD.Sensors target = new OBD.Sensors(); // TODO: Initialize to an appropriate value
+            OBD.Sensors target = new OBD.Sensors(frm);
             OBD.Sensors.ReturnSet expected = null; // TODO: Initialize to an appropriate value
             OBD.Sensors.ReturnSet actual;
             actual = target.Timing_Advance();
-            Assert.AreNotEqual(expected, actual);            
+            Assert.AreNotEqual("", actual);            
         }
 
         /// <summary>
